@@ -13,6 +13,7 @@
 		512DF2AC1DF95620009A5B6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 512DF2AA1DF95620009A5B6E /* Main.storyboard */; };
 		512DF2AE1DF95620009A5B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512DF2AD1DF95620009A5B6E /* Assets.xcassets */; };
 		512DF2B11DF95620009A5B6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 512DF2AF1DF95620009A5B6E /* LaunchScreen.storyboard */; };
+		512DF2BA1DF956AE009A5B6E /* WBPaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 512DF2B91DF956AE009A5B6E /* WBPaintView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		512DF2AD1DF95620009A5B6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		512DF2B01DF95620009A5B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		512DF2B21DF95620009A5B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		512DF2B81DF956AE009A5B6E /* WBPaintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPaintView.h; sourceTree = "<group>"; };
+		512DF2B91DF956AE009A5B6E /* WBPaintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPaintView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				512DF2AF1DF95620009A5B6E /* LaunchScreen.storyboard */,
 				512DF2B21DF95620009A5B6E /* Info.plist */,
 				512DF2A11DF95620009A5B6E /* Supporting Files */,
+				512DF2B81DF956AE009A5B6E /* WBPaintView.h */,
+				512DF2B91DF956AE009A5B6E /* WBPaintView.m */,
 			);
 			path = WBDrawRectDemo;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 		512DF2961DF95620009A5B6E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WB;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = lsrain;
 				TargetAttributes = {
@@ -150,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				512DF2BA1DF956AE009A5B6E /* WBPaintView.m in Sources */,
 				512DF2A91DF95620009A5B6E /* ViewController.m in Sources */,
 				512DF2A61DF95620009A5B6E /* AppDelegate.m in Sources */,
 				512DF2A31DF95620009A5B6E /* main.m in Sources */,
@@ -273,9 +280,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WBDrawRectDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lsrain.WBDrawRectDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -284,9 +293,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WBDrawRectDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lsrain.WBDrawRectDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
